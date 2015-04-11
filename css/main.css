@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box; }
+
+ul, li, a, p, h1, h2, h3, h4, h5, blockquote {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none; }
+
+:focus {
+  outline: none; }
+
+body {
+  font-family: 'Code-Light'; }
+
+.content-wrapper {
+  background: #f6f6f6;
+  width: 100%;
+  overflow: hidden; }
+
+.header {
+  padding: 0 118px 22px 118px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300; }
+  .header .logo {
+    width: 116px;
+    height: 116px;
+    float: left;
+    margin: 20px 0 0; }
+  .header .main-nav {
+    float: right; }
+    .header .main-nav ul {
+      margin: 70px 0 0; }
+      .header .main-nav ul li {
+        margin-left: 80px;
+        display: inline-block; }
+        .header .main-nav ul li:first-child {
+          margin: 0; }
+        .header .main-nav ul li a {
+          padding: 25px 5px;
+          color: #000;
+          text-transform: uppercase; }
+          .header .main-nav ul li a:hover {
+            background: #ffea00; }
+
+.title-section {
+  background: url("../images/slider-bg.jpg") no-repeat;
+  display: block;
+  padding: 20px 0 30px;
+  overflow: hidden; }
+  .title-section h2 {
+    color: #ffea00;
+    background: #424146;
+    padding: 22px 200px 22px 22px;
+    display: inline-block;
+    margin-left: 118px;
+    text-transform: uppercase;
+    overflow: hidden; }
+
+.content {
+  width: 64%;
+  float: left; }
+  .content blockquote {
+    font-family: 'CenturyGothic';
+    font-style: italic;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 10px 0 0 45px;
+    width: 48%;
+    background: #ffea00;
+    margin: 70px 0 30px -5px;
+    line-height: 28px;
+    color: #000;
+    box-sizing: border-box;
+    overflow: hidden; }
+    .content blockquote cite {
+      float: right;
+      font-size: 11px;
+      margin: 10px 5px 0; }
+  .content .left-column {
+    float: left;
+    width: 48%; }
+  .content .left-column li, .content .right-column li {
+    background: #ffea00;
+    margin-bottom: 30px;
+    padding-bottom: 55px;
+    position: relative; }
+    .content .left-column li a img, .content .right-column li a img {
+      width: 100%; }
+    .content .left-column li h4, .content .right-column li h4 {
+      font-family: 'CenturyGothic';
+      font-size: 23px;
+      line-height: 30px;
+      margin: 24px 0 25px 24px; }
+    .content .left-column li p, .content .right-column li p {
+      color: #5e5e5e;
+      font-family: CenturyGothic;
+      font-weight: 400;
+      margin-left: 24px;
+      padding-right: 50px; }
+    .content .left-column li .likes, .content .right-column li .likes {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      font-family: CenturyGothic;
+      font-size: 12px; }
+      .content .left-column li .likes:before, .content .right-column li .likes:before {
+        content: url("../images/heart-icon.png") no-repeat;
+        width: 13px;
+        height: 10px;
+        display: inline-block;
+        margin-right: 5px; }
+    .content .left-column li .author, .content .right-column li .author {
+      position: absolute;
+      right: 25px;
+      bottom: 25px;
+      font-family: CenturyGothic;
+      font-size: 12px;
+      color: #000; }
+  .content .right-column {
+    float: right;
+    width: 48%;
+    margin-top: -130px; }
+
+.sidebar {
+  float: right;
+  width: 35%;
+  font-size: 16px; }
+  .sidebar a:hover {
+    opacity: 0.7; }
+  .sidebar h3 {
+    text-transform: uppercase;
+    color: #ffea00;
+    font-size: 20px;
+    font-family: 'CenturyGothic';
+    margin-bottom: 35px; }
+  .sidebar .search {
+    margin-top: 75px;
+    margin-bottom: 30px;
+    width: 96%;
+    background: #424147;
+    padding: 20px 50px; }
+    .sidebar .search input {
+      border-radius: 15px;
+      width: 340px;
+      border: none; }
+  .sidebar .categories, .sidebar .archive {
+    width: 96%;
+    background: #424147;
+    padding: 35px 0 35px 35px;
+    margin-bottom: 30px; }
+    .sidebar .categories li, .sidebar .archive li {
+      display: inline-block;
+      width: 39%;
+      margin-bottom: 15px;
+      margin-right: 40px; }
+      .sidebar .categories li:before, .sidebar .archive li:before {
+        content: url("../images/arrow.jpg") no-repeat;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        display: inline-block; }
+      .sidebar .categories li a, .sidebar .archive li a {
+        color: #fff;
+        font-family: 'CenturyGothic';
+        font-size: 16px;
+        text-transform: uppercase; }
+  .sidebar .popular-posts {
+    width: 96%;
+    background: #424147;
+    padding: 35px 20px 35px 35px;
+    margin-bottom: 30px; }
+    .sidebar .popular-posts ul li {
+      display: block;
+      margin-bottom: 21px; }
+      .sidebar .popular-posts ul li img {
+        width: 100px;
+        height: 70px;
+        display: inline-block; }
+      .sidebar .popular-posts ul li p {
+        width: 70%;
+        line-height: 20px;
+        float: right; }
+      .sidebar .popular-posts ul li a {
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: #fff; }
+  .sidebar .tags {
+    width: 96%;
+    background: #424147;
+    padding: 35px 30px 35px 35px;
+    margin-bottom: 30px; }
+    .sidebar .tags ul li {
+      overflow: hidden;
+      display: inline-block; }
+      .sidebar .tags ul li a {
+        padding: 5px;
+        color: #424147;
+        background: #ffea00;
+        display: block;
+        font-weight: 700; }
+
+.footer-content {
+  background: #414146;
+  overflow: hidden;
+  color: #fff;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  font-family: 'CenturyGothic'; }
+  .footer-content .footer-content-center {
+    padding: 0 118px; }
+  .footer-content h3 {
+    font-size: 18px;
+    margin: 0 0 30px; }
+  .footer-content .footer-left-column {
+    width: 30%;
+    float: left; }
+    .footer-content .footer-left-column .about p {
+      font-size: 13px;
+      font-weight: 400;
+      padding-right: 50px; }
+    .footer-content .footer-left-column .about .learn-more {
+      display: inline-block;
+      color: #fff;
+      background: #000;
+      border-bottom: 2px solid #eeda00;
+      font-size: 15px;
+      line-height: 38px;
+      padding: 0 20px;
+      margin-top: 30px; }
+    .footer-content .footer-left-column .photo-stream h3 {
+      margin: 40px 0 20px; }
+    .footer-content .footer-left-column .photo-stream img {
+      margin: 5px 1px 0;
+      width: 100px;
+      height: 60px; }
+  .footer-content .footer-middle-column {
+    width: 40%;
+    margin-left: 60px;
+    float: left; }
+    .footer-content .footer-middle-column .social {
+      margin-top: 40px; }
+      .footer-content .footer-middle-column .social h3 {
+        margin: 0;
+        float: left; }
+      .footer-content .footer-middle-column .social ul {
+        margin-top: -5px;
+        float: right; }
+        .footer-content .footer-middle-column .social ul li {
+          display: inline-block; }
+          .footer-content .footer-middle-column .social ul li a {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            text-indent: -9999px; }
+      .footer-content .footer-middle-column .social .facebook {
+        background: url("../images/facebook.jpg") no-repeat; }
+      .footer-content .footer-middle-column .social .googleplus {
+        background: url("../images/google-plus.jpg") no-repeat; }
+      .footer-content .footer-middle-column .social .twitter {
+        background: url("../images/twitter.jpg") no-repeat; }
+      .footer-content .footer-middle-column .social .linkedin {
+        background: url("../images/linkedin.jpg") no-repeat; }
+      .footer-content .footer-middle-column .social .youtube {
+        background: url("../images/youtube.jpg") no-repeat; }
+      .footer-content .footer-middle-column .social .blogger {
+        background: url("../images/bloger.jpg") no-repeat; }
+      .footer-content .footer-middle-column .social .rss {
+        background: url("../images/rss.jpg") no-repeat; }
+      .footer-content .footer-middle-column .social .dribble {
+        background: url("../images/dribbble.jpg") no-repeat; }
+  .footer-content .footer-right-column {
+    width: 20%;
+    float: right; }
+    .footer-content .footer-right-column .contact-list li {
+      padding-top: 20px; }
+      .footer-content .footer-right-column .contact-list li p {
+        line-height: 13px;
+        padding-left: 15px;
+        vertical-align: top; }
+        .footer-content .footer-right-column .contact-list li p span {
+          margin-left: 50px;
+          display: block; }
+      .footer-content .footer-right-column .contact-list li a {
+        color: #ffea00;
+        vertical-align: top; }
+    .footer-content .footer-right-column .contact-list .address {
+      list-style-image: url("../images/Address.png"); }
+    .footer-content .footer-right-column .contact-list .phone {
+      list-style-image: url("../images/Phone.jpg"); }
+    .footer-content .footer-right-column .contact-list .e-mail {
+      list-style-image: url("../images/email.jpg"); }
+  .footer-content .follow h3 {
+    margin-top: 47px; }
+  .footer-content .follow .mail-us {
+    width: 70%;
+    margin-top: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffea00; }
+  .footer-content .follow .submit {
+    background: url("../images/email-icon.jpg") no-repeat 0 50%;
+    width: 28px;
+    height: 28px;
+    border: none;
+    display: inline-block;
+    vertical-align: bottom; }
+
+.footer {
+  background: #000;
+  padding-bottom: 30px;
+  overflow: hidden;
+  font-family: CenturyGothic; }
+
+.footer-center {
+  padding: 0 118px; }
+  .footer-center .copyright {
+    margin-top: 30px;
+    float: left;
+    font-size: 14px;
+    color: #ddd; }
+  .footer-center .footer-nav {
+    margin: 30px 0 0;
+    float: right; }
+    .footer-center .footer-nav li {
+      margin-left: 80px;
+      display: inline-block; }
+      .footer-center .footer-nav li:first-child {
+        margin: 0; }
+      .footer-center .footer-nav li a {
+        font-family: 'CenturyGothic';
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ddd;
+        padding: 20px 5px; }
+        .footer-center .footer-nav li a:hover {
+          color: #000;
+          background: #ffea00; }
+
+.content-wrapper .post {
+  width: 64%;
+  float: left;
+  font-family: CenturyGothic;
+  margin-top: 75px; }
+  .content-wrapper .post article {
+    width: 90%;
+    margin: 0 auto; }
+    .content-wrapper .post article .post-title {
+      background: #ffea00;
+      padding-bottom: 50px;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative; }
+      .content-wrapper .post article .post-title h4 {
+        margin-top: 25px;
+        margin-left: 25px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600; }
+      .content-wrapper .post article .post-title .likes {
+        position: absolute;
+        bottom: 10px;
+        right: 310px;
+        font-family: CenturyGothic;
+        font-size: 12px; }
+        .content-wrapper .post article .post-title .likes:before {
+          content: url("../images/heart-icon.png") no-repeat;
+          width: 13px;
+          height: 10px;
+          display: inline-block;
+          margin-right: 5px; }
+      .content-wrapper .post article .post-title .author {
+        position: absolute;
+        right: 30px;
+        bottom: 10px;
+        font-family: CenturyGothic;
+        font-size: 12px;
+        color: #000; }
+    .content-wrapper .post article p {
+      font-size: 15px;
+      margin-left: 25px; }
+      .content-wrapper .post article p:first-of-type {
+        margin: 55px 0 0 25px; }
+    .content-wrapper .post article .article-item {
+      width: 90%;
+      margin: 30px 50px; }
+    .content-wrapper .post article img {
+      width: 100%; }
+  .content-wrapper .post .social {
+    padding-bottom: 48px;
+    border-bottom: 1px solid #cacaca; }
+    .content-wrapper .post .social .share {
+      padding: 5px 20px;
+      background: #424147;
+      display: inline-block;
+      margin: 70px 0 0 72px;
+      color: #ffea00;
+      text-transform: uppercase; }
+    .content-wrapper .post .social ul {
+      float: right;
+      margin-top: 65px; }
+      .content-wrapper .post .social ul li {
+        background: #ffea00;
+        height: 30px;
+        display: inline-block;
+        margin-right: 25px; }
+        .content-wrapper .post .social ul li a {
+          width: 60px;
+          color: #000;
+          display: block;
+          overflow: hidden; }
+          .content-wrapper .post .social ul li a:before {
+            width: 30px;
+            height: 30px; }
+    .content-wrapper .post .social .fbook:before {
+      content: url("../images/fbook.jpg") no-repeat; }
+    .content-wrapper .post .social .google:before {
+      content: url("../images/google.jpg") no-repeat; }
+    .content-wrapper .post .social .tweet:before {
+      content: url("../images/tweet.png") no-repeat; }
+    .content-wrapper .post .social .linked:before {
+      content: url("../images/linked.png") no-repeat; }
+.content-wrapper .related-posts {
+  width: 64%;
+  float: left;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #cacaca; }
+  .content-wrapper .related-posts img {
+    width: 100%; }
+  .content-wrapper .related-posts h3 {
+    font-family: CenturyGothic;
+    padding: 5px 20px;
+    background: #424147;
+    display: inline-block;
+    margin: 70px 0 0 72px;
+    color: #ffea00;
+    text-transform: uppercase;
+    font-size: 18px; }
+  .content-wrapper .related-posts ul {
+    width: 90%;
+    margin: 25px auto 0;
+    padding-bottom: 40px; }
+    .content-wrapper .related-posts ul li {
+      margin-right: 12px;
+      width: 30%;
+      display: inline-block;
+      background: #ffea00;
+      padding-bottom: 5px; }
+      .content-wrapper .related-posts ul li a {
+        color: #000;
+        font-family: CenturyGothic;
+        text-transform: uppercase; }
+        .content-wrapper .related-posts ul li a p {
+          margin-left: 10px;
+          margin-top: 5px;
+          font-size: 13px; }
+
+/*# sourceMappingURL=main.css.map */
